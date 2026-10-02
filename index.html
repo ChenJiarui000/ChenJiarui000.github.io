@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <meta
     name="description"
-    content="Jiarui (Jerry) Chen — Supply Chain Management student at Rutgers Business School with experience in Excel, MySQL, data analysis, and business research."
+    content="Jiarui (Jerry) Chen is a Supply Chain Management student at Rutgers Business School with project experience in Excel, MySQL, data analysis, and business research."
   >
+  <meta name="theme-color" content="#a51b35">
 
-  <title>Jiarui (Jerry) Chen | Portfolio</title>
+  <title>Jiarui (Jerry) Chen | Supply Chain &amp; Analytics</title>
 
   <style>
     :root {
@@ -110,10 +110,7 @@
       text-decoration: underline;
     }
 
-    h1,
-    h2,
-    h3,
-    p {
+    h1, h2, h3, p {
       margin-top: 0;
     }
 
@@ -215,6 +212,16 @@
       border-top: 4px solid var(--red);
       border-radius: 8px;
       background: white;
+    }
+
+    /* Personal photo */
+    .profile-photo {
+      display: block;
+      width: min(180px, 100%);
+      height: auto;
+      margin: 0 auto 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
     }
 
     .profile-card h2 {
@@ -434,6 +441,8 @@
     }
 
     .coursework {
+      font-size: 13px;
+      color: var(--muted);
       border-top: 1px solid var(--line);
       padding-top: 16px;
     }
@@ -592,16 +601,12 @@
 </head>
 
 <body>
-
   <a class="skip" href="#main">Skip to content</a>
 
-  <!-- 顶部导航 -->
   <header>
     <div class="wrap header-inner">
-
       <a class="brand" href="#about">
-        <span aria-hidden="true">JC</span>
-        Jerry Chen
+        <span aria-hidden="true">JC</span>Jerry Chen
       </a>
 
       <nav aria-label="Main navigation">
@@ -611,23 +616,19 @@
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </nav>
-
     </div>
   </header>
 
   <main id="main" class="wrap">
 
-    <!-- 个人介绍 -->
+    <!-- About -->
     <section id="about" class="hero" aria-labelledby="name">
-
       <div>
         <p class="eyebrow">
           Supply Chain Management · Business Analytics
         </p>
 
-        <h1 id="name">
-          Jiarui <span>(Jerry)</span> Chen
-        </h1>
+        <h1 id="name">Jiarui <span>(Jerry)</span> Chen</h1>
 
         <h2 class="statement-title">Personal Statement</h2>
 
@@ -652,14 +653,23 @@
         </div>
       </div>
 
-      <aside class="profile-card" aria-label="Education at a glance">
+      <aside
+        class="profile-card"
+        aria-label="Portrait and education at a glance"
+      >
+        <img
+          class="profile-photo"
+          src="photo.jpg"
+          alt="Portrait of Jiarui (Jerry) Chen"
+          width="1529"
+          height="2048"
+          decoding="async"
+          fetchpriority="high"
+        >
 
         <p class="eyebrow">Rutgers University</p>
 
-        <h2>
-          Rutgers<br>
-          Business School
-        </h2>
+        <h2>Rutgers<br>Business School</h2>
 
         <p>
           B.S. in Supply Chain Management<br>
@@ -677,24 +687,15 @@
             <dd>May 2029</dd>
           </div>
         </dl>
-
       </aside>
-
     </section>
 
-    <!-- 技能 -->
-    <section
-      id="skills"
-      class="section"
-      aria-labelledby="skills-title"
-    >
-
+    <!-- Skills -->
+    <section id="skills" class="section" aria-labelledby="skills-title">
       <p class="eyebrow">Tools &amp; capabilities</p>
-
       <h2 id="skills-title">Skills</h2>
 
       <ul class="skills">
-
         <li>
           <strong>Excel &amp; Google Sheets</strong>
           <span>
@@ -726,22 +727,15 @@
             business proposals, and team presentations.
           </span>
         </li>
-
       </ul>
     </section>
 
-    <!-- 三个项目 -->
-    <section
-      id="projects"
-      class="section"
-      aria-labelledby="projects-title"
-    >
-
+    <!-- Projects -->
+    <section id="projects" class="section" aria-labelledby="projects-title">
       <p class="eyebrow">Selected work</p>
 
       <div class="section-heading">
         <h2 id="projects-title">Projects</h2>
-
         <p class="section-note">
           Coursework, independent practice, and a team competition
         </p>
@@ -749,19 +743,14 @@
 
       <div class="projects">
 
-        <!-- 项目1 -->
         <article class="project">
-
           <div class="project-top">
             <span class="number" aria-hidden="true">01</span>
             <span class="kind">MIS course project</span>
           </div>
 
           <h3>Business Analytics Project</h3>
-
-          <p class="date">
-            September – December 2025
-          </p>
+          <p class="date">September – December 2025</p>
 
           <p class="project-description">
             I cleaned and analyzed 1,000+ rows of operational data
@@ -789,17 +778,14 @@
                 Used PivotTables, XLOOKUP, and conditional formulas
                 to clean and analyze data.
               </li>
-
               <li>
                 Designed Customers, Orders, Products, and OrderDetails
                 tables with primary and foreign keys.
               </li>
-
               <li>
                 Wrote 10+ SQL queries using JOIN, GROUP BY,
                 and aggregations for summary metrics and reports.
               </li>
-
               <li>
                 Delivered a 5–7 minute presentation
                 with an 8–10 slide deck.
@@ -808,28 +794,20 @@
 
             <p class="reference">
               Résumé reference: Project Experience.<br>
-              <a
-                href="Jiarui_Chen_Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View résumé reference (PDF)
+              <a href="Jiarui_Chen_Resume.pdf" download>
+                Download résumé reference (PDF)
               </a>
             </p>
           </details>
-
         </article>
 
-        <!-- 项目2 -->
         <article class="project">
-
           <div class="project-top">
             <span class="number" aria-hidden="true">02</span>
             <span class="kind">Independent practice</span>
           </div>
 
           <h3>Data Analytics Practice</h3>
-
           <p class="date">Summer 2025</p>
 
           <p class="project-description">
@@ -855,15 +833,12 @@
 
             <ul class="detail-list">
               <li>
-                Built a practice dataset and tracked
-                data quality issues.
+                Built a practice dataset and tracked data quality issues.
               </li>
-
               <li>
                 Used PivotTables and charts to summarize trends
                 and key metrics in a mini-dashboard.
               </li>
-
               <li>
                 Wrote queries using JOIN and GROUP BY
                 to generate reports.
@@ -871,33 +846,22 @@
             </ul>
 
             <p class="reference">
-              Résumé reference:
-              Self-Initiated Data Analytics Practice.<br>
-              <a
-                href="Jiarui_Chen_Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View résumé reference (PDF)
+              Résumé reference: Self-Initiated Data Analytics Practice.<br>
+              <a href="Jiarui_Chen_Resume.pdf" download>
+                Download résumé reference (PDF)
               </a>
             </p>
           </details>
-
         </article>
 
-        <!-- 项目3 -->
         <article class="project">
-
           <div class="project-top">
             <span class="number" aria-hidden="true">03</span>
             <span class="kind">Case competition</span>
           </div>
 
           <h3>Diamond Challenge</h3>
-
-          <p class="date">
-            Fall 2024 · Remote / Irvine, CA
-          </p>
+          <p class="date">Fall 2024 · Remote / Irvine, CA</p>
 
           <p class="project-description">
             I worked with a five-person team on an initial-round
@@ -923,13 +887,10 @@
               <li>
                 Helped coordinate tasks and meet a tight deadline.
               </li>
-
               <li>
-                Researched customers and competitors using
-                5+ credible sources and developed a clear
-                value proposition.
+                Researched customers and competitors using 5+ credible
+                sources and developed a clear value proposition.
               </li>
-
               <li>
                 Revised the pitch deck using rubric criteria
                 and team feedback.
@@ -938,75 +899,56 @@
 
             <p class="reference">
               Résumé reference: Professional Experience.<br>
-              <a
-                href="Jiarui_Chen_Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View résumé reference (PDF)
+              <a href="Jiarui_Chen_Resume.pdf" download>
+                Download résumé reference (PDF)
               </a>
             </p>
           </details>
-
         </article>
 
       </div>
     </section>
 
-    <!-- 教育背景 -->
+    <!-- Education -->
     <section
       id="education"
       class="section"
       aria-labelledby="education-title"
     >
-
       <p class="eyebrow">Academic background</p>
-
       <h2 id="education-title">Education</h2>
 
       <div class="education-grid">
-
         <article class="education-card">
           <h3>Rutgers Business School</h3>
 
           <p>
             Bachelor of Science in Supply Chain Management<br>
-            New Brunswick, NJ<br>
-            Expected May 2029 · GPA 3.58
+            New Brunswick, NJ · Expected May 2029 · GPA 3.58
           </p>
 
           <p class="coursework">
             <strong>Relevant coursework</strong><br>
-            Applied Calculus for Business, MIS,
-            Intro to Management, Intro to Supply Chain,
-            and Macroeconomics.
+            Applied Calculus for Business, MIS, Intro to Management,
+            Intro to Supply Chain, and Macroeconomics.
           </p>
         </article>
 
         <article class="education-card">
           <h3>Fairmont Preparatory Academy</h3>
-
           <p>
             High School Diploma<br>
             Anaheim, CA · May 2025
           </p>
         </article>
-
       </div>
     </section>
 
-    <!-- 联系方式 -->
-    <section
-      id="contact"
-      class="section"
-      aria-labelledby="contact-title"
-    >
-
+    <!-- Contact -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
       <div class="contact-panel">
-
-        <div>
+        <div id="resume">
           <p class="eyebrow">Get in touch</p>
-
           <h2 id="contact-title">Let's connect.</h2>
 
           <p>
@@ -1024,7 +966,6 @@
         </div>
 
         <ul class="contact-list">
-
           <li>
             <span>Email</span>
             <a href="mailto:jc3663@scarletmail.rutgers.edu">
@@ -1047,7 +988,6 @@
             <span>Location</span>
             East Brunswick, New Jersey
           </li>
-
         </ul>
       </div>
     </section>
@@ -1060,6 +1000,5 @@
       <a href="#about">Back to top ↑</a>
     </div>
   </footer>
-
 </body>
 </html>
