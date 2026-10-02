@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="description"
+    content="Jiarui (Jerry) Chen — Supply Chain Management student at Rutgers Business School. Explore my skills, projects, education, and resume."
+  >
+
+  <title>Jiarui (Jerry) Chen | Personal Portfolio</title>
+
+  <style>
+    :root {
+      --red: #a51b35;
+      --red-dark: #801329;
+      --ink: #202d3a;
+      --muted: #56616d;
+      --background: #f7f5f0;
+      --line: #deded8;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--red);
+      text-underline-offset: 4px;
+    }
+
+    a:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid var(--red);
+      outline-offset: 5px;
+    }
+
+    h1, h2, h3, p {
+      margin-top: 0;
+    }
+
+    h2, h3 {
+      line-height: 1.3;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: 0 auto;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -10000px;
+    }
+
+    .skip-link:focus {
+      left: 12px;
+      top: 12px;
+      z-index: 10;
+      padding: 10px 16px;
+      background: var(--white);
+    }
+
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px 0;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .brand-icon {
+      display: grid;
+      place-items: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--red);
+      color: var(--white);
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav a {
+      color: var(--ink);
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: var(--red);
+      text-decoration: underline;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.7fr) minmax(260px, 1fr);
+      align-items: center;
+      gap: 48px;
+      padding: 56px 0;
+    }
+
+    .eyebrow {
+      margin-bottom: 12px;
+      color: var(--red);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin-bottom: 24px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(40px, 5vw, 64px);
+      line-height: 1.12;
+      letter-spacing: -1.5px;
+    }
+
+    h1 span {
+      color: var(--red);
+    }
+
+    .statement-title {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .statement {
+      max-width: 650px;
+      color: var(--muted);
+      font-size: 20px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 18px;
+      border: 1px solid var(--red);
+      border-radius: 6px;
+      background: var(--red);
+      color: var(--white);
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      border-color: var(--red-dark);
+      background: var(--red-dark);
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: var(--red);
+    }
+
+    .button.secondary:hover {
+      background: #f8e9ec;
+    }
+
+    .profile-card {
+      justify-self: center;
+      width: 100%;
+      max-width: 380px;
+      padding: 26px;
+      border: 1px solid var(--line);
+      border-top: 4px solid var(--red);
+      border-radius: 12px;
+      background: var(--white);
+      text-align: center;
+    }
+
+    .profile-photo {
+      display: block;
+      width: 190px;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto 22px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+    }
+
+    .profile-card h2 {
+      margin-bottom: 10px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 24px;
+    }
+
+    .profile-card p {
+      margin-bottom: 14px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .profile-facts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 20px 0 0;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+
+    .profile-facts dt {
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .profile-facts dd {
+      margin: 5px 0 0;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .section {
+      padding: 44px 0;
+      border-top: 1px solid var(--line);
+      scroll-margin-top: 20px;
+    }
+
+    .section h2 {
+      margin-bottom: 24px;
+      font-size: 28px;
+    }
+
+    .section-description {
+      color: var(--muted);
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .skills li,
+    .project,
+    .education-card {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--white);
+    }
+
+    .skills strong {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .skills span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      align-items: start;
+      gap: 20px;
+    }
+
+    .project-label {
+      margin-bottom: 12px;
+      color: var(--red);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .project h3 {
+      margin-bottom: 12px;
+      font-size: 22px;
+    }
+
+    .project-date {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .project-description {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin: 20px 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .tags li {
+      padding: 3px 9px;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      background: var(--background);
+      font-size: 11px;
+    }
+
+    .metric {
+      margin-bottom: 20px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .metric strong {
+      display: block;
+      color: var(--ink);
+      font-size: 21px;
+    }
+
+    details {
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+    }
+
+    summary {
+      color: var(--red);
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .detail-list {
+      padding-left: 18px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .detail-list li {
+      margin-bottom: 10px;
+    }
+
+    .reference {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .education-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+      gap: 20px;
+    }
+
+    .education-card h3 {
+      margin-bottom: 14px;
+      font-size: 21px;
+    }
+
+    .education-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .education-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .coursework {
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+    }
+
+    .resume-preview {
+      margin-top: 24px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--white);
+    }
+
+    .resume-preview object {
+      display: block;
+      width: 100%;
+      height: 720px;
+      border: 0;
+    }
+
+    .resume-fallback {
+      padding: 24px;
+    }
+
+    .contact-panel {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 32px;
+      padding: 36px;
+      border-radius: 12px;
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    .contact-panel h2 {
+      margin-bottom: 14px;
+    }
+
+    .contact-panel p {
+      color: #d1d8de;
+    }
+
+    .contact-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .contact-list li {
+      margin-bottom: 16px;
+    }
+
+    .contact-list span {
+      display: block;
+      color: #c0cbd4;
+      font-size: 12px;
+    }
+
+    .contact-list a {
+      color: var(--white);
+      overflow-wrap: anywhere;
+    }
+
+    footer {
+      padding: 26px 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 960px) {
+      .hero {
+        gap: 28px;
+      }
+
+      .skills {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .hero,
+      .education-grid,
+      .contact-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 40px 0;
+      }
+
+      .statement {
+        font-size: 18px;
+      }
+
+      nav {
+        gap: 14px;
+      }
+
+      .contact-panel {
+        padding: 26px;
+      }
+
+      .resume-preview object {
+        height: 520px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .skills {
+        grid-template-columns: 1fr;
+      }
+
+      nav a {
+        font-size: 13px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <div class="container header-inner">
+      <a class="brand" href="#about">
+        <span class="brand-icon" aria-hidden="true">JC</span>
+        Jerry Chen
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#resume">Résumé</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+
+    <!-- 首页介绍和照片 -->
+    <section id="about" class="hero" aria-labelledby="name">
+      <div>
+        <p class="eyebrow">
+          Supply Chain Management · Business Analytics
+        </p>
+
+        <h1 id="name">
+          Jiarui <span>(Jerry)</span> Chen
+        </h1>
+
+        <h2 class="statement-title">Personal Statement</h2>
+
+        <p class="statement">
+          I am a supply chain management student at Rutgers University
+          who uses Excel, SQL, and business research to understand data
+          and support better business decisions.
+        </p>
+
+        <div class="actions">
+          <a class="button" href="#projects">
+            Explore my projects
+          </a>
+
+          <a
+            class="button secondary"
+            href="./Jiarui_Chen_Resume.pdf"
+            download="Jiarui_Chen_Resume.pdf"
+          >
+            Download résumé
+          </a>
+        </div>
+      </div>
+
+      <aside
+        class="profile-card"
+        aria-label="Portrait and education at a glance"
+      >
+        <!-- photo.jpg 必须和 index.html 放在同一个目录 -->
+        <img
+          class="profile-photo"
+          src="./photo.jpg"
+          alt="Portrait of Jiarui (Jerry) Chen"
+          width="1529"
+          height="2048"
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
+        >
+
+        <h2>Rutgers Business School</h2>
+
+        <p>
+          B.S. in Supply Chain Management<br>
+          New Brunswick, New Jersey
+        </p>
+
+        <dl class="profile-facts">
+          <div>
+            <dt>Current GPA</dt>
+            <dd>3.58</dd>
+          </div>
+
+          <div>
+            <dt>Expected graduation</dt>
+            <dd>May 2029</dd>
+          </div>
+        </dl>
+      </aside>
+    </section>
+
+    <!-- 技能 -->
+    <section
+      id="skills"
+      class="section"
+      aria-labelledby="skills-title"
+    >
+      <p class="eyebrow">Tools &amp; capabilities</p>
+      <h2 id="skills-title">Skills</h2>
+
+      <ul class="skills">
+        <li>
+          <strong>Excel &amp; Google Sheets</strong>
+          <span>
+            Excel PivotTables, XLOOKUP, SUMIFS, charts,
+            and spreadsheet data organization.
+          </span>
+        </li>
+
+        <li>
+          <strong>MySQL &amp; Databases</strong>
+          <span>
+            SELECT, JOIN, GROUP BY, aggregations, and relational
+            tables with primary and foreign keys.
+          </span>
+        </li>
+
+        <li>
+          <strong>Data Analysis</strong>
+          <span>
+            Data cleaning, duplicate and missing-value checks,
+            mini-dashboards, and summary reports.
+          </span>
+        </li>
+
+        <li>
+          <strong>Research &amp; Presentations</strong>
+          <span>
+            Customer and competitor research, PowerPoint,
+            business proposals, and team presentations.
+          </span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 项目 -->
+    <section
+      id="projects"
+      class="section"
+      aria-labelledby="projects-title"
+    >
+      <p class="eyebrow">Selected work</p>
+      <h2 id="projects-title">Projects</h2>
+
+      <p class="section-description">
+        Coursework, independent practice, and a team competition.
+      </p>
+
+      <div class="projects">
+
+        <article class="project">
+          <p class="project-label">01 · MIS course project</p>
+          <h3>Business Analytics Project</h3>
+
+          <p class="project-date">
+            September – December 2025
+          </p>
+
+          <p class="project-description">
+            I cleaned and analyzed 1,000+ rows of operational data
+            in Excel and designed a four-table MySQL database.
+            I used SQL reports and presented 2–3 recommendations
+            based on the findings.
+          </p>
+
+          <ul class="tags" aria-label="Project tools">
+            <li>Excel</li>
+            <li>MySQL</li>
+            <li>PowerPoint</li>
+          </ul>
+
+          <p class="metric">
+            <strong>1,000+ rows</strong>
+            of operational data analyzed
+          </p>
+
+          <details>
+            <summary>Read project details</summary>
+
+            <ul class="detail-list">
+              <li>
+                Used PivotTables, XLOOKUP, and conditional
+                formulas to clean and analyze data.
+              </li>
+              <li>
+                Designed Customers, Orders, Products, and
+                OrderDetails tables with primary and foreign keys.
+              </li>
+              <li>
+                Wrote 10+ SQL queries using JOIN, GROUP BY,
+                and aggregations for summary metrics and reports.
+              </li>
+              <li>
+                Delivered a 5–7 minute presentation with
+                an 8–10 slide deck.
+              </li>
+            </ul>
+
+            <p class="reference">
+              Résumé reference: Project Experience.<br>
+              <a
+                href="./Jiarui_Chen_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View résumé reference (PDF)
+              </a>
+            </p>
+          </details>
+        </article>
+
+        <article class="project">
+          <p class="project-label">02 · Independent practice</p>
+          <h3>Data Analytics Practice</h3>
+
+          <p class="project-date">Summer 2025</p>
+
+          <p class="project-description">
+            I built a practice dataset of about 200–500 rows
+            and tracked duplicates and missing values.
+            I created an Excel mini-dashboard and used MySQL
+            queries to answer business questions.
+          </p>
+
+          <ul class="tags" aria-label="Project tools">
+            <li>Excel</li>
+            <li>MySQL</li>
+            <li>Data quality</li>
+          </ul>
+
+          <p class="metric">
+            <strong>10+ SQL queries</strong>
+            for quick reports and business questions
+          </p>
+
+          <details>
+            <summary>Read project details</summary>
+
+            <ul class="detail-list">
+              <li>
+                Built a practice dataset and tracked
+                data quality issues.
+              </li>
+              <li>
+                Used PivotTables and charts to summarize
+                trends and key metrics in a mini-dashboard.
+              </li>
+              <li>
+                Wrote queries using JOIN and GROUP BY
+                to generate reports.
+              </li>
+            </ul>
+
+            <p class="reference">
+              Résumé reference: Self-Initiated Data Analytics Practice.<br>
+              <a
+                href="./Jiarui_Chen_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View résumé reference (PDF)
+              </a>
+            </p>
+          </details>
+        </article>
+
+        <article class="project">
+          <p class="project-label">03 · Case competition</p>
+          <h3>Diamond Challenge</h3>
+
+          <p class="project-date">
+            Fall 2024 · Remote / Irvine, CA
+          </p>
+
+          <p class="project-description">
+            I worked with a five-person team on an initial-round
+            business proposal. We researched target customers
+            and competitors and developed a 12–14 slide pitch deck.
+          </p>
+
+          <ul class="tags" aria-label="Project skills">
+            <li>Business research</li>
+            <li>Pitch deck</li>
+            <li>Teamwork</li>
+          </ul>
+
+          <p class="metric">
+            <strong>5-person team</strong>
+            collaborating on a business proposal
+          </p>
+
+          <details>
+            <summary>Read project details</summary>
+
+            <ul class="detail-list">
+              <li>
+                Helped coordinate tasks and meet a tight deadline.
+              </li>
+              <li>
+                Researched customers and competitors using
+                5+ credible sources and developed a clear
+                value proposition.
+              </li>
+              <li>
+                Revised the pitch deck using rubric criteria
+                and team feedback.
+              </li>
+            </ul>
+
+            <p class="reference">
+              Résumé reference: Professional Experience.<br>
+              <a
+                href="./Jiarui_Chen_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View résumé reference (PDF)
+              </a>
+            </p>
+          </details>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 教育经历 -->
+    <section
+      id="education"
+      class="section"
+      aria-labelledby="education-title"
+    >
+      <p class="eyebrow">Academic background</p>
+      <h2 id="education-title">Education</h2>
+
+      <div class="education-grid">
+        <article class="education-card">
+          <h3>Rutgers Business School</h3>
+
+          <p>
+            Bachelor of Science in Supply Chain Management<br>
+            New Brunswick, NJ<br>
+            Expected May 2029 · GPA 3.58
+          </p>
+
+          <p class="coursework">
+            <strong>Relevant coursework</strong><br>
+            Applied Calculus for Business, MIS, Intro to Management,
+            Intro to Supply Chain, and Macroeconomics.
+          </p>
+        </article>
+
+        <article class="education-card">
+          <h3>Fairmont Preparatory Academy</h3>
+
+          <p>
+            High School Diploma<br>
+            Anaheim, CA<br>
+            May 2025
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 简历预览和下载 -->
+    <section
+      id="resume"
+      class="section"
+      aria-labelledby="resume-title"
+    >
+      <p class="eyebrow">Experience &amp; qualifications</p>
+      <h2 id="resume-title">Résumé</h2>
+
+      <p class="section-description">
+        View my résumé below or download a PDF copy.
+      </p>
+
+      <div class="actions">
+        <a
+          class="button"
+          href="./Jiarui_Chen_Resume.pdf"
+          download="Jiarui_Chen_Resume.pdf"
+        >
+          Download résumé (PDF)
+        </a>
+
+        <a
+          class="button secondary"
+          href="./Jiarui_Chen_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open résumé in a new tab
+        </a>
+      </div>
+
+      <div class="resume-preview">
+        <object
+          data="./Jiarui_Chen_Resume.pdf"
+          type="application/pdf"
+          aria-label="Jiarui Chen résumé PDF preview"
+        >
+          <div class="resume-fallback">
+            <p>
+              Your browser cannot display this PDF here.
+              You can open or download it using the links above.
+            </p>
+
+            <a
+              href="./Jiarui_Chen_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open my résumé
+            </a>
+          </div>
+        </object>
+      </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section
+      id="contact"
+      class="section"
+      aria-labelledby="contact-title"
+    >
+      <div class="contact-panel">
+        <div>
+          <h2 id="contact-title">Let's connect.</h2>
+
+          <p>
+            I am interested in supply chain management,
+            business operations, and data analysis.
+          </p>
+        </div>
+
+        <ul class="contact-list">
+          <li>
+            <span>Email</span>
+            <a href="mailto:jc3663@scarletmail.rutgers.edu">
+              jc3663@scarletmail.rutgers.edu
+            </a>
+          </li>
+
+          <li>
+            <span>LinkedIn</span>
+            <a
+              href="https://www.linkedin.com/in/jiaruichen0830"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              linkedin.com/in/jiaruichen0830
+            </a>
+          </li>
+
+          <li>
+            <span>Location</span>
+            East Brunswick, New Jersey
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© 2026 Jiarui (Jerry) Chen</p>
+      <a href="#about">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
